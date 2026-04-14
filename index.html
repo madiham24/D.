@@ -140,7 +140,7 @@
       padding: 12px 20px;
       border-radius: 80px;
       font-family: 'Courier New', monospace;
-      font-size: 2.5rem;
+      font-size: clamp(1rem, 4vw, 1.6rem);;
       font-weight: 900;
       color: #fff0c0;
       text-shadow: 0 0 15px #ffaa33;
@@ -156,7 +156,7 @@
       .countdown-badge {
         right: 28px;
         padding: 18px 32px;
-        font-size: 4rem;
+        font-size: clamp(1rem, 4vw, 1.6rem);
         letter-spacing: 12px;
       }
     }
@@ -185,7 +185,7 @@
       transform: translate(-50%, -50%) scale(0.7);
       background: linear-gradient(135deg, #ffd89b, #f8a35e);
       color: #fff0e0;
-      font-size: 1.6rem;
+      font-size: clamp(1rem, 4vw, 1.6rem);
       font-weight: 800;
       padding: 18px 28px;
       border-radius: 60px;
@@ -203,7 +203,7 @@
     }
     @media (min-width: 768px) {
       .big-birthday {
-        font-size: 3.8rem;
+        font-size: clamp(1rem, 4vw, 1.6rem);
         padding: 28px 48px;
         letter-spacing: 6px;
         white-space: nowrap;
@@ -212,7 +212,7 @@
     }
     @media (max-width: 480px) {
       .big-birthday {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 4vw, 1.6rem);
         padding: 12px 20px;
         letter-spacing: 2px;
         white-space: nowrap;
@@ -279,15 +279,15 @@
     @media (min-width: 768px) {
       .card {
         padding: 18px 32px;
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 4vw, 1.6rem);
         border: 3px solid #ffbe76;
         gap: 12px;
       }
     }
     .card:active { transform: scale(0.96); background: #ffe5c4; }
-    .card-emoji { font-size: 1.2rem; }
+    .card-emoji { font-size: clamp(1rem, 4vw, 1.6rem); }
     @media (min-width: 768px) {
-      .card-emoji { font-size: 2rem; }
+      .card-emoji { font-size: clamp(1rem, 4vw, 1.6rem); }
     }
 
     /* MODAL PANELS — FULLY RESPONSIVE */
@@ -353,7 +353,7 @@
       text-shadow: 0 0 2px white;
     }
     @media (min-width: 768px) {
-      .scratch-message { font-size: 1.2rem; }
+      .scratch-message { font-size: clamp(1rem, 4vw, 1.6rem); }
     }
     .scratch-message.revealed {
       color: #b33f12;
@@ -548,10 +548,12 @@
       50% { transform: scale(1.02); opacity: 1; }
       100% { transform: scale(1); opacity: 0.9; }
     }
-    
+    .main-wrapper {
+  transform: scale(1.15);
+}
     /* ensure cake container scales properly */
     .cake-container svg {
-      max-width: 85vw;
+      max-width: 95vw;
       height: auto;
     }
     @media (min-width: 768px) {
