@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>✨</title>
   <style>
     * {
@@ -17,7 +18,7 @@
       overflow: hidden;
       background: #0c0704;
       font-family: 'Lato', 'Poppins', system-ui, -apple-system, sans-serif;
-      overflow-x: hidden;
+      position: fixed;
       top: 0;
       left: 0;
     }
@@ -140,7 +141,7 @@
       padding: 12px 20px;
       border-radius: 80px;
       font-family: 'Courier New', monospace;
-      font-size: clamp(1rem, 4vw, 1.6rem);;
+      font-size: 2.5rem;
       font-weight: 900;
       color: #fff0c0;
       text-shadow: 0 0 15px #ffaa33;
@@ -156,7 +157,7 @@
       .countdown-badge {
         right: 28px;
         padding: 18px 32px;
-        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-size: 4rem;
         letter-spacing: 12px;
       }
     }
@@ -185,7 +186,7 @@
       transform: translate(-50%, -50%) scale(0.7);
       background: linear-gradient(135deg, #ffd89b, #f8a35e);
       color: #fff0e0;
-      font-size: clamp(1rem, 4vw, 1.6rem);
+      font-size: 1.6rem;
       font-weight: 800;
       padding: 18px 28px;
       border-radius: 60px;
@@ -203,7 +204,7 @@
     }
     @media (min-width: 768px) {
       .big-birthday {
-        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-size: 3.8rem;
         padding: 28px 48px;
         letter-spacing: 6px;
         white-space: nowrap;
@@ -212,7 +213,7 @@
     }
     @media (max-width: 480px) {
       .big-birthday {
-        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-size: 1.2rem;
         padding: 12px 20px;
         letter-spacing: 2px;
         white-space: nowrap;
@@ -279,15 +280,15 @@
     @media (min-width: 768px) {
       .card {
         padding: 18px 32px;
-        font-size: clamp(1rem, 4vw, 1.6rem);
+        font-size: 1.4rem;
         border: 3px solid #ffbe76;
         gap: 12px;
       }
     }
     .card:active { transform: scale(0.96); background: #ffe5c4; }
-    .card-emoji { font-size: clamp(1rem, 4vw, 1.6rem); }
+    .card-emoji { font-size: 1.2rem; }
     @media (min-width: 768px) {
-      .card-emoji { font-size: clamp(1rem, 4vw, 1.6rem); }
+      .card-emoji { font-size: 2rem; }
     }
 
     /* MODAL PANELS — FULLY RESPONSIVE */
@@ -353,7 +354,7 @@
       text-shadow: 0 0 2px white;
     }
     @media (min-width: 768px) {
-      .scratch-message { font-size: clamp(1rem, 4vw, 1.6rem); }
+      .scratch-message { font-size: 1.2rem; }
     }
     .scratch-message.revealed {
       color: #b33f12;
@@ -548,12 +549,10 @@
       50% { transform: scale(1.02); opacity: 1; }
       100% { transform: scale(1); opacity: 0.9; }
     }
-    .main-wrapper {
-  transform: scale(1.15);
-}
+    
     /* ensure cake container scales properly */
     .cake-container svg {
-      max-width: 95vw;
+      max-width: 85vw;
       height: auto;
     }
     @media (min-width: 768px) {
@@ -561,31 +560,6 @@
         max-width: 200px;
       }
     }
-    /*m*/
-    @media (max-width: 480px) {
-  /* Make cake BIG */
-  .cake-container svg {
-    width: 90vw !important;
-    max-width: none;
-  }
-
-  /* Make cards BIG */
-  .cards-gallery {
-    gap: 16px;
-  }
-
-  .card {
-    font-size: 1.2rem;
-    padding: 16px 22px;
-    border-radius: 40px;
-  }
-
-  /* Make birthday text bigger */
-  .big-birthday {
-    font-size: 1.6rem;
-    padding: 16px 24px;
-  }
-}
   </style>
 </head>
 <body>
